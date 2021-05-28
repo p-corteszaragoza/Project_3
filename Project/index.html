@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>Game</title>
+</head>
+
+<body>
+	<header>
+		<div class="title">
+			<img src="images/icon.png" alt="load icon">
+			<h1>Attack Video Game</h1>
+		</div>
+	</header>
+
+	<div id="status" class="container"></div>
+	
+	<main class="container">	
+		<div id="main-character" class="character-container">
+			<div class="title">
+				<div class="circle">
+					<img class="control-icon" src="images/control.svg">
+				</div>
+				<h3>Player 1</h3>
+				<img id="character-medal-img" class="medal-img" src="images/medal.png" alt="load image">
+			</div>
+			<div class="img-container">
+				<img id="character-img" src="images/player1.gif" alt="load image">
+			</div>			
+			<div id="text-result-character" class="result">WINNER</div>
+			<p id="character-points" class="points">Points: 100</p>
+			<button id="attack-btn" onclick="attack('character')">Attack</button>
+		</div>
+
+		<p class="versus-container">
+			<img class="versus-img" src="images/versus.png" alt="load image">
+		</p>
+
+		<div id="enemy" class="character-container">
+			<div class="title">
+				<div class="circle background-enemy">
+					<img class="control-icon" src="images/control.svg">
+				</div>
+				<h3>Player 2</h3>
+				<img id="enemy-medal-img"  class="medal-img" src="images/medal.png" alt="load image">
+			</div>
+			<div class="img-container">
+				<img id="enemy-img" src="images/player2.gif" alt="load image">
+			</div>
+			<div id="text-result-enemy" class="result">WINNER</div>
+			<p id="enemy-points" class="points">Points: 100</p>
+			<button id="enemy-attack-btn" onclick="attack('enemy');">Attack</button>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-container">
+			<span class="text-footer"> Copyright &copy; 2021  Paola Cortes. All rights reserved.</span>
+		</div>
+	</footer>
+	
+	<script src="script.js"></script>
+
+</body>
+</html>
